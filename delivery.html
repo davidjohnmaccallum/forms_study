@@ -5,123 +5,122 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
+
         textarea.stylized {
-            border-radius: 20px; 
+            border-radius: 20px;
             margin: 5px;
             padding: 5px;
             line-height: 1.5em;
         }
+
+        .form-row {
+            display: flex; 
+            flex-direction: row; 
+            justify-content: space-between;
+        }
+
         input.stylized {
-            border-radius: 20px; 
+            border-radius: 20px;
             padding: 5px;
-            margin: 5px; 
+            margin: 5px;
             border: 1px solid black;
             line-height: 1.5em;
             height: 3em;
         }
+
         .table {
             border: 1px solid black;
-            border-radius: 20px; 
+            border-radius: 20px;
             padding-bottom: 20px;
         }
+
         .table-header {
-            background-color: aquamarine; 
+            background-color: rgb(182, 255, 231);
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
             border-bottom: 1px solid black;
         }
+
+        .table-row {
+            display: flex; 
+            flex-direction: row; 
+            justify-content: space-between;
+        }
+
         .table-header span {
             padding: 5px;
             border-right: 1px solid black;
         }
+
         .table-header span:last-child {
             border-right: initial;
         }
+
         .table input {
             line-height: 1.5em;
-            height: 3em;
             padding: 5px;
             box-sizing: content-box;
-            border: 1px solid gray;
+            border: 0;
+            border-bottom: 1px solid lightblue;
         }
     </style>
 </head>
 
 <body>
     <form>
-        
-        <div style="display: flex; flex-direction: row; justify-content: space-between;">
+
+        <div class="form-row">
             <h1>DELIVERY / AFLEWERING</h1>
             <h1>2</h1>
         </div>
-        
-        <div style="display: flex; flex-direction: row; justify-content: space-between;">
-            
-            <textarea 
-                class="stylized"
-                style="
+
+        <div class="form-row">
+
+            <textarea class="stylized" style="
                     flex-grow: 1; 
-                    background-color: aquamarine; 
-                " 
-                name="from" 
-                rows="4" 
-                placeholder="From/Van"
-                ></textarea>
-            
-            <input 
-                class="stylized"
-                type="datetime" 
-                name="date" 
-                placeholder="Date/Datum"
-                style="
-                    background-color: aquamarine; 
-                "
-                />
+                    background-color: rgb(182, 255, 231); 
+                " name="from" rows="4" placeholder="From/Van"></textarea>
+
+            <input class="stylized" type="datetime" name="date" placeholder="Date/Datum" style="
+                    background-color: rgb(182, 255, 231); 
+                " />
 
         </div>
-        
-        <div style="display: flex; flex-direction: row; justify-content: space-between;">
-            <textarea 
-                class="stylized"
-                style="flex-grow: 1;" 
-                name="to" 
-                rows="4" 
-                placeholder="To/Aan"
-                ></textarea>
+
+        <div class="form-row">
+            <textarea class="stylized" style="flex-grow: 1;" name="to" rows="4" placeholder="To/Aan"></textarea>
         </div>
-        
+
         <div style="margin: 5px; ">
             <p>PLEASE RECEIVE in good order and condition the undermentioned Goods, viz.</p>
             <p>ONTVANG ASB. die ondergemeide goedere in bevredigende toestand.</p>
         </div>
-        
+
         <div class="table">
 
-            <div 
-                class="table-header"
-                style="display: flex; flex-direction: row; justify-content: space-between;">
+            <div class="table-header table-row">
                 <span style="width: 100px; text-align: center;">Quantity<br>Hoev.</span>
                 <span style="flex-grow: 1; text-align: center;">Description<br>Beskrywing</span>
             </div>
-            
-            <div style="display: flex; flex-direction: row; justify-content: space-between;">
-                <input style="width: 100px; text-align: center;" type="number" name="quantity.0" />
-                <input style="flex-grow: 1; text-align: center;" type="text" name="description.0" />
+
+            <div class="table-row">
+                <input style="width: 100px;" type="number" name="quantity.0" />
+                <input style="flex-grow: 1;" type="text" name="description.0" />
             </div>
-            
-            <div style="display: flex; flex-direction: row; justify-content: space-between;">
-                <input style="width: 100px; text-align: center;" type="number" name="quantity.0" />
-                <input style="flex-grow: 1; text-align: center;" type="text" name="description.0" />
+
+            <div class="table-row">
+                <input style="width: 100px;" type="number" name="quantity.0" />
+                <input style="flex-grow: 1;" type="text" name="description.0" />
             </div>
-            
-            <div style="display: flex; flex-direction: row; justify-content: space-between;">
-                <input style="width: 100px; text-align: center;" type="number" name="quantity.0" />
-                <input style="flex-grow: 1; text-align: center;" type="text" name="description.0" />
+
+            <div class="table-row">
+                <input style="width: 100px;" type="number" name="quantity.0" />
+                <input style="flex-grow: 1;" type="text" name="description.0" />
             </div>
 
         </div>
-        
-        <div style="display: flex; flex-direction: row; justify-content: space-between;">
+
+        <div class="table-row">
             <input style="flex-grow: 1; text-align: center;" type="text" name="signature" />
         </div>
 
