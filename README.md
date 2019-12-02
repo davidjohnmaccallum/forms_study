@@ -4,4 +4,6 @@ I was browsing my local stationary shop and came across a section with books of 
 
 ## DELIVERY / AFLEWERING
 
+[Open form](https://practical-snyder-46e47c.netlify.com/delivery.html)
+
 ![Delivery form](images/delivery.jpg)
