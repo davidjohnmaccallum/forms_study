@@ -14,9 +14,23 @@
         }
 
         .form-row {
-            display: flex; 
-            flex-direction: row; 
+            display: flex;
+            flex-direction: row;
             justify-content: space-between;
+        }
+
+        .signature-row {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input.signature {
+            border: 0;
+            border-bottom: 2px solid;
+            width: 50%;
+            line-height: 3em;
+            text-align: center;
         }
 
         input.stylized {
@@ -31,7 +45,6 @@
         .table {
             border: 1px solid black;
             border-radius: 20px;
-            padding-bottom: 20px;
         }
 
         .table-header {
@@ -42,8 +55,8 @@
         }
 
         .table-row {
-            display: flex; 
-            flex-direction: row; 
+            display: flex;
+            flex-direction: row;
             justify-content: space-between;
         }
 
@@ -56,12 +69,24 @@
             border-right: initial;
         }
 
-        .table input {
+        .table-row input {
             line-height: 1.5em;
             padding: 5px;
             box-sizing: content-box;
             border: 0;
             border-bottom: 1px solid lightblue;
+        }
+
+        .table-row input:first-child {
+            border-right: 1px solid;
+        }
+
+        .table-row:last-child input:first-child {
+            border-bottom-left-radius: 20px;
+        }
+
+        .table-row:last-child input:last-child {
+            border-bottom-right-radius: 20px;
         }
     </style>
 </head>
@@ -118,10 +143,41 @@
                 <input style="flex-grow: 1;" type="text" name="description.0" />
             </div>
 
+            <div class="table-row">
+                <input style="width: 100px;" type="number" name="quantity.0" />
+                <input style="flex-grow: 1;" type="text" name="description.0" />
+            </div>
+
+            <div class="table-row">
+                <input style="width: 100px;" type="number" name="quantity.0" />
+                <input style="flex-grow: 1;" type="text" name="description.0" />
+            </div>
+
+            <div class="table-row">
+                <input style="width: 100px;" type="number" name="quantity.0" />
+                <input style="flex-grow: 1;" type="text" name="description.0" />
+            </div>
+
+            <div class="table-row">
+                <input style="width: 100px;" type="number" name="quantity.0" />
+                <input style="flex-grow: 1;" type="text" name="description.0" />
+            </div>
+
+            <div class="table-row">
+                <input style="width: 100px;" type="number" name="quantity.0" />
+                <input style="flex-grow: 1;" type="text" name="description.0" />
+            </div>
+
+            <div class="table-row">
+                <input style="width: 100px;" type="number" name="quantity.0" />
+                <input style="flex-grow: 1;" type="text" name="description.0" />
+            </div>
+
         </div>
 
-        <div class="table-row">
-            <input style="flex-grow: 1; text-align: center;" type="text" name="signature" />
+        <div class="signature-row">
+            <input class="signature" type="text" name="signature" />
+            <label class="signature">Signed / Geteken</label>
         </div>
 
     </form>
