@@ -90,6 +90,24 @@
         .table-row:last-child input:last-child {
             border-bottom-right-radius: 20px;
         }
+
+        .submit-row {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 1em;
+        }
+
+        input[type="submit"] {
+            background-color: rgb(182, 255, 231);;
+            border: 1px solid black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 1em;
+        }
     </style>
 </head>
 
@@ -180,6 +198,10 @@
         <div class="signature-row">
             <input class="signature" type="text" name="signature" />
             <label class="signature">Signed / Geteken</label>
+        </div>
+
+        <div class="submit-row">
+            <input type="submit" value="Submit / Dien" />            
         </div>
 
     </form>
